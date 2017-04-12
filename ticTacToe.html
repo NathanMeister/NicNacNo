@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<!-- 
+   Autdor:  N Meister
+   Date:    04/2017
+-->
+<title>Tic Fuc Tac</title> 
+<meta charset="UTF-8" />
+<link href="ticTacToe.css" 
+      rel="stylesheet"
+      type="text/css"  />
+<script src="ticTacToe.js" language="javascript" type="text/javascript"> </script>
+
+</head> 
+
+<body> 
+
+<header>
+   <h1>Nic Nac No</h1>
+   <h2>By Nathan Meister</h2>
+   <div>
+	   <button id="X" class="turnPicker" name="gameButtons">X</button>
+	   <button id="O" class="turnPicker" name="gameButtons">O</button>
+	   <p id="ugh"></p>
+   </div>
+</header>
+
+<section>
+	<article>
+
+		<!-- place tde table here -->
+		<table>
+			<tr id="rowOne">
+				<td id="upLeft">#</td>
+				<td id="upMiddle" class="vertical">#</td>
+				<td id="upRight">#</td>
+			</tr>
+			<tr id="rowTwo">
+				<td id="midLeft" class="horizontal">#</td>
+				<td id="midMiddle" class="vertical horizontal">#</td>
+				<td id="midRight" class="horizontal">#</td>
+			</tr>
+			<tr id="rowThree">
+				<td id="lowLeft">#</td>
+				<td id="lowMiddle" class="vertical">#</td>
+				<td id="lowRight">#</td>
+			</tr>
+		<table>
+		</article>
+		<article id="winsLoss">
+			<p id="winsX">X wins = 0</p>
+			<p id="winsO">O wins = 0</p>
+			<button id="clear">Reset Board</button>	
+		</article>
+		<p id="debug">Click for debug</p>
+		<script language="JavaScript" type="text/javascript">
+			ticTac();
+		</script>
+
+	</article>
+</section>
+
+
+</body> 
+</html>
